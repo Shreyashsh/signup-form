@@ -1,0 +1,115 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url("Norse-Bold.otf");
+}
+
+@font-face {
+  font-family: poppins;
+  src: url("Poppins-Regular.ttf");
+}
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "poppins";
+}
+p {
+  max-width: 80%;
+  font-size: 1.5rem;
+}
+.form_row,
+.form_row > div {
+  display: flex;
+}
+
+input {
+  width: 100%;
+}
+
+.form_row {
+  gap: 60px;
+}
+
+.top_level > div:first-child {
+  min-width: 40%;
+  background-image: url("sidepic.jpg");
+  background-position: center;
+  background-size: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  justify-content: center;
+}
+
+.top_level > div + div {
+  padding: 10px;
+  padding-left: 0;
+  width: 60vw;
+  max-width: 60vw;
+}
+
+.img_container {
+  background-color: #000000;
+  opacity: 0.5;
+  padding-top: 10px;
+  width: 100%;
+  padding-bottom: 10px;
+  height: 10vw;  
+  display: flex;
+  justify-content: center;
+}
+#logo {
+  height: 100%;
+  opacity: 1;
+}
+.top_level > div > div,
+.top_level > div > p {
+  padding-left: 40px;
+}
+.img_container{
+    padding: 0 !important;
+    min-height: 20%;
+}
+label {
+  font-size: 0.6rem;
+}
+
+.form_row > div {
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+}
+
+.form_body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.top_level {
+  display: flex;
+  height: 100%;
+  background-color: #ffe9e3;
+  color: rgb(7, 7, 7);
+}
+.form_container {
+  background: #fafafa;
+  padding-top: 10px;
+  box-shadow: 2px 2px 8px #000000;
+}
+
+a {
+  color: blueviolet;
+  font-weight: bold;
+  text-decoration: none;
+}
+#btn {
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 200px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border-color: black;
+}
